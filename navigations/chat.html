@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inbox.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h3 class="btn btn-primary heading">
+        Room <span id="display_room_name"></span>
+    </h3>
+
+    <button onclick="logout()" class="btn btn-default logout">
+        <i class="fa fa-arrow-left"></i>
+    </button>
+
+    <center>
+        <div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+    </center>
+
+    <center>
+        <div class="input_div_message_page">
+            <br>
+            <input id="msg" class="form-control" placeholder="Aa">
+            <button class="btn btn-default sent" onclick="send()"></button>
+            <br><br>
+        </div>
+    </center>
+
+
+
+    <script src="../scripts/chat.js"></script>
+</body>
+
+</html>
